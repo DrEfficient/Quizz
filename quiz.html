@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="quiz.css">
+    <script src="javascriptquiz.js"></script>
+    <title>Quiz</title>
+  </head>
+
+  <body>
+    <div id="content">
+      <div id="quizcontent">
+
+        <h2> Fråga: </h2>
+        <h3 id="question"> </h3>
+
+        <label>
+          <span>Skriv in ditt svar här:</span>
+          <input type="text" id="answer">
+        </label>
+        <h3 id="correct"> </h3>
+        <button onclick="checkAnswer()">Kolla svar</button>
+        <button onclick="nextQuestion()">Nästa fråga</button>
+        <button onclick="quitquiz()">Avsluta</button>
+      </div>
+		<table id="table">
+			<tr>
+				<th> Antal frågor </th><th> Antal rätt </th><th> Procent Korrekt </th>
+			</tr>
+			<tr>
+				<td><span id="questionSum"> </span></td><td><span id="correctSum"> </span></td><td><span id="procentcorrect"> </span></td><td><span id="provet"></span>
+			</tr>
+		</table>
+  </div>
+  </body>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			setQuestion(rand);
+			document.getElementById("questionSum").innerHTML = 0;
+			document.getElementById("correctSum").innerHTML = 0;
+		});
+	</script>
+</html>

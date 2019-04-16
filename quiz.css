@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#content {
+  border:solid black;
+  max-width: 30%;
+  margin-left: 35%;
+  margin-top: 10%;
+}
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2015/09/09/16/40/ocean-931776_960_720.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
